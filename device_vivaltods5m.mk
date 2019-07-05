@@ -161,8 +161,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 ifeq ($(TARGET_BUILD_VARIANT),user)      
 else      
 endif
+# Copy kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/samsung/vivaltods5m/kernel
+
+ PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_vivaltods5m
 PRODUCT_DEVICE := vivaltods5m
-PRODUCT_MODEL := Omni on Vivalto
+PRODUCT_MODEL := lineage on Vivalto

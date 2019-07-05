@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_vivaltods5m.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage_vivaltods5m.mk
