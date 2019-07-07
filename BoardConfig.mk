@@ -29,7 +29,7 @@ TARGET_INIT_VENDOR_LIB := libinit_hawaii_ss
 # Kernel
 BOARD_KERNEL_BASE := 0x81e00000
 BOARD_KERNEL_PAGESIZE := 4096
-TARGET_KERNEL_CONFIG := bcm21664_hawaii_ss_vivaltods5m_rev00_cm_defconfig
+TARGET_KERNEL_CONFIG := cm_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/hawaii
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
